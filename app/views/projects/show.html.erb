@@ -1,7 +1,7 @@
 <h2>Name: <%= @project.name %></h2>
 <p>Material: <%= @project.material %></p>
 <p>Challenge Theme: <%= @project.challenge.theme %></p>
-<p>Number of Contestants: <%= @project.contestants.count %></p>
+<p>Number of Contestants: <%= @project.contestant_count %></p>
 <p>Average Contestant Experience: <%= @project.average_years_experience %></p>
 
 <%= form_tag("/projects/#{@project.id}", method: :post) do %>
