@@ -2,7 +2,7 @@
   <section class= "contestant-<%= contestant.id %>"
     <p>Name: <%= contestant.name %></p>
     <% contestant.projects.each do |project| %>
-      <p>==> <%= project.name %></p>
+      <p>* <%= project.name %></p>
     <% end %>
   </section>
 <% end %>
