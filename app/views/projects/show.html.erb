@@ -4,7 +4,7 @@
 <p>Number of Contestants: <%= @project.contestants.count %></p>
 <p>Average Contestant Experience: <%= @project.average_years_experience %></p>
 
-<%= form_tag("/project/#{@project.id}", method: :post) do %>
+<%= form_tag("/projects/#{@project.id}", method: :post) do %>
   <%= label_tag "Contestant id" %>
   <%= number_field_tag :contestant_id %>
 
