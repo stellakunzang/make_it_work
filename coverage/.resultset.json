@@ -325,8 +325,8 @@
           null,
           1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null
         ]
@@ -457,7 +457,7 @@
           null,
           null,
           1,
-          6,
+          7,
           null,
           null
         ]
@@ -483,12 +483,26 @@
           1,
           null,
           1,
-          5,
+          6,
+          null,
+          null
+        ]
+      },
+      "/Users/skb/turing/2module/challenges/make_it_work/app/controllers/contestant_projects_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1589560813
+    "timestamp": 1589561228
   }
 }
