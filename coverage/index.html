@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-05-15T10:47:39-06:00">2020-05-15T10:47:39-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-05-15T10:52:21-06:00">2020-05-15T10:52:21-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>156</b> relevant lines,
-    <span class="green"><b>156</b> lines covered</span> and
+    <b>159</b> relevant lines,
+    <span class="green"><b>159</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -84,11 +84,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#7305c201023fee392e0d95be0373baa4dda0691e" class="src_link" title="app/controllers/contestant_projects_controller.rb">app/controllers/contestant_projects_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">13</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.50</td>
+            <td class="cell--number">1.43</td>
             
           </tr>
         
@@ -473,8 +473,8 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -525,18 +525,18 @@
 
             
 
-            <code class="ruby">    ContestantProject.create({</code>
+            <code class="ruby">    ContestantProject.create(contestant_project_params)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">      contestant_id: params[:contestant_id],</code>
+            
+
+            <code class="ruby">      redirect_to &quot;/projects/#{params[:project_id]}&quot;</code>
           </li>
         </div>
       
@@ -547,7 +547,7 @@
 
             
 
-            <code class="ruby">      project_id: params[:id]</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -558,18 +558,18 @@
 
             
 
-            <code class="ruby">      })</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="8">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      redirect_to &quot;/projects/#{params[:id]}&quot;</code>
+            <code class="ruby">  private</code>
           </li>
         </div>
       
@@ -580,12 +580,45 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def contestant_project_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="11">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    params.permit(:contestant_id, :project_id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
@@ -3825,7 +3858,7 @@
 
             
 
-            <code class="ruby">  post &#39;/projects/:id&#39;, to: &#39;contestant_projects#create&#39;</code>
+            <code class="ruby">  post &#39;/projects/:project_id&#39;, to: &#39;contestant_projects#create&#39;</code>
           </li>
         </div>
       
