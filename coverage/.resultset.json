@@ -252,6 +252,32 @@
           null
         ]
       },
+      "/Users/skb/turing/2module/challenges/make_it_work/spec/features/projects/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/skb/turing/2module/challenges/make_it_work/spec/models/challenge_spec.rb": {
         "lines": [
           1,
@@ -379,6 +405,6 @@
         ]
       }
     },
-    "timestamp": 1589556746
+    "timestamp": 1589557224
   }
 }
