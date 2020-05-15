@@ -14,12 +14,20 @@ RSpec.describe "contestants index page" do
 
     ContestantProject.create(contestant_id: gretchen.id, project_id: news_chic.id)
     ContestantProject.create(contestant_id: kentaro.id, project_id: upholstery_tux.id)
+    ContestantProject.create(contestant_id: gretchen.id, project_id: upholstery_tux.id)
 
     visit "/contestants"
 
-    expect(page).to have_content(gretchen.name)
-    expect(page).to have_content("Projects: News Chic")
-    expect(page).to have_content(kentaro.name)
-    expect(page).to have_content("Projects: Upholstery Tuxedo")
+    within ".contestant-#{gretchen.id}" do
+      expect(page).to have_content(gretchen.name)
+      expect(page).to have_content(news_chic.name)
+      expect(page).to have_content(upholstery_tux.name)
+    end
+
+    within ".contestant-#{kentaro.id}" do
+      expect(page).to have_content(kentaro.name)
+      expect(page).to have_content(upholstery_tux.name)
+    end
   end
+
 end
