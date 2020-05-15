@@ -7,8 +7,8 @@ RSpec.describe "project's show page" do
 
     visit "/projects/#{news_chic.id}"
 
-    expect(page).to have_content(new_chic.name)
-    expect(page).to have_content(new_chic.material)
+    expect(page).to have_content(news_chic.name)
+    expect(page).to have_content(news_chic.material)
   end
 
   it "should also display the theme of the challenge it belongs to" do
