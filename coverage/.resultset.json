@@ -389,12 +389,12 @@
           null
         ]
       },
-      "/Users/skb/turing/2module/challenges/make_it_work/app/controllers/projects_controller.rb": {
+      "/Users/skb/turing/2module/challenges/make_it_work/app/controllers/contestants_controller.rb": {
         "lines": [
           1,
           null,
           1,
-          2,
+          1,
           null,
           null
         ]
@@ -404,8 +404,18 @@
           1,
           null
         ]
+      },
+      "/Users/skb/turing/2module/challenges/make_it_work/app/controllers/projects_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1589557301
+    "timestamp": 1589557402
   }
 }
