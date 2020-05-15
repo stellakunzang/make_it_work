@@ -30,7 +30,7 @@ RSpec.describe "contestants index page" do
     end
   end
 
-  it "can add project using form on project index page" do
+  xit "can add project using form on project index page" do
     furniture_challenge = Challenge.create(theme: "Apartment Furnishings", project_budget: 1000)
     upholstery_tux = furniture_challenge.projects.create(name: "Upholstery Tuxedo", material: "Couch")
     gretchen = Contestant.create(name: "Gretchen Jones", age: 36, hometown: "NYC", years_of_experience: 12)
@@ -54,7 +54,7 @@ RSpec.describe "contestants index page" do
       expect(page).to have_content(gretchen.name)
       expect(page).to have_content(upholstery_tux.name)
     end
-    
+
   end
 
 end
